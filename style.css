@@ -168,6 +168,61 @@ section {
 
 /* Responsiv design */
 
+/* planshet va boshqalarga */
+@media (max-width: 1080px) {
+
+    .search button {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+
+    .categories button {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 25px;
+        row-gap: 20px;
+    }
+
+    .cards .card {
+        width: 250px;
+        height: 300px;
+        row-gap: 15px;
+    }
+
+
+    .title h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    .title span {
+        font-size: 12px;
+    }
+}
+
+/* 800px dan pasiga */
+@media (max-width: 800px) {
+
+    .search button{
+        font-size: 13px;
+    }
+
+    .categories button{
+        font-size: 13px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+}
+
+/* telifon versiyaga  */
 @media (max-width: 400px) {
 
     .search {
@@ -218,16 +273,6 @@ section {
     .categories button {
         padding: 6px 10px;
         font-size: 10px;
-        border: 2px solid #7c7cdf;
-        color: #7c7cdf;
-        background: transparent;
-        border-radius: 30px;
-        transition: 0.3s;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.5;
-        }
     }
 
     .cards {
